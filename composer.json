@@ -2,9 +2,8 @@
     "name": "dpi/drupal-entity-traits",
     "description": "Useful traits for Drupal content entities.",
     "homepage": "https://github.com/dpi/drupal-entity-traits",
-    "license": "proprietary",
+    "license": "BSD-3-Clause",
     "type": "package",
-    "version": "0.0.1",
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.0"
