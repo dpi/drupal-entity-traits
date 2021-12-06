@@ -13,3 +13,6 @@ composer global require dpi/drupal-entity-traits
 ```
 
 _Drupal is a registered trademark of Dries Buytaert._
+
+[ci]: https://github.com/dpi/drupal-entity-traits/actions
+[code-coverage]: https://app.codecov.io/gh/dpi/drupal-entity-traits
