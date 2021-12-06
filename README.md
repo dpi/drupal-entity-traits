@@ -1,4 +1,10 @@
-Drupal Entity Traits
+# Drupal Entity Traits
+
+[![Latest Stable Version](http://poser.pugx.org/dpi/drupal-entity-traits/v)](https://packagist.org/packages/dpi/drupal-entity-traits)
+[![Total Downloads](http://poser.pugx.org/dpi/drupal-entity-traits/downloads)](https://packagist.org/packages/dpi/drupal-entity-traits)
+[![Codecov](https://img.shields.io/codecov/c/github/dpi/drupal-entity-traits)][code-coverage]
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/dpi/drupal-entity-traits/1.x)][ci]
+[![License](http://poser.pugx.org/dpi/drupal-entity-traits/license)](https://packagist.org/packages/dpi/drupal-entity-traits)
 
 https://github.com/dpi/drupal-entity-traits
 

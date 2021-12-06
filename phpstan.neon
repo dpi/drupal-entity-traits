@@ -3,3 +3,9 @@ parameters:
 	paths:
 		- ./src
 		- ./tests
+	bootstrapFiles:
+		- tests/bootstrap.php
+	checkMissingIterableValueType: false
+	fileExtensions:
+		- php
+		- inc
