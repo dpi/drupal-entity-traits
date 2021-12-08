@@ -5,13 +5,14 @@
     "license": "BSD-3-Clause",
     "type": "package",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.0"
     },
     "require-dev": {
         "dpi/drupal-phpunit-bootstrap": "^9.4",
-        "drupal/core": ">=9.3",
-        "drupal/date_recur": "^3.2@beta",
+        "drupal/core": "^9.3",
+        "drupal/date_recur": "^3.2",
         "friendsofphp/php-cs-fixer": "dev-master#075082e",
         "jangregor/phpstan-prophecy": "^1",
         "mikey179/vfsstream": "^1.6.7",
@@ -22,7 +23,10 @@
         "phpunit/phpunit": "^9.5"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "preferred-install": {
+            "*": "dist"
+        }
     },
     "autoload": {
         "psr-4": {
