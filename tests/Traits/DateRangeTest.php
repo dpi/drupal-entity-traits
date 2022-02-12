@@ -158,8 +158,8 @@ final class DateRangeTest extends TestCase
     public function testSetTimeZoneForTimestamp(): void
     {
         \Drupal::setContainer($this->container);
-        $startDate = new \DateTimeImmutable('14th June 2014 9am');
-        $endDate = new \DateTimeImmutable('14th June 2014 12pm');
+        $startDate = new \DateTimeImmutable('14th June 2014 9am', new \DateTimeZone('Asia/Singapore'));
+        $endDate = new \DateTimeImmutable('14th June 2014 12pm', new \DateTimeZone('Asia/Singapore'));
         $entity = new DateRangeEntity([], 'datetime_entity');
         $entity->setMyDateTimeToDateRangeField($startDate, $endDate);
     }

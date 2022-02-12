@@ -123,8 +123,13 @@ trait DateRangeTrait
             throw new \InvalidArgumentException('Time zones for both objects must be the same.');
         }
 
-        $rawStart = $startDate->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
-        $rawEnd = $endDate->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
+        $utc = new \DateTimeZone(DateTimeItemInterface::STORAGE_TIMEZONE);
+        $rawStart = \DateTime::createFromInterface($startDate)
+            ->setTimezone($utc)
+            ->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
+        $rawEnd = \DateTime::createFromInterface($endDate)
+            ->setTimezone($utc)
+            ->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
         $this->set($fieldName, [
           'value' => $rawStart,
           'end_value' => $rawEnd,
