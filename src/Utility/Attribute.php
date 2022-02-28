@@ -25,6 +25,7 @@ final class Attribute
      */
     final public static function stack(string $attributeClassName, int $parents = 1)
     {
+        /** @var array{function: string, line?: int, file?: string, class: class-string, type?: string, args?: array, object?: object} $caller */
         $caller = debug_backtrace(\DEBUG_BACKTRACE_IGNORE_ARGS)[$parents + 1];
         $reflection = new \ReflectionMethod($caller['class'], $caller['function']);
         $attributes = $reflection->getAttributes($attributeClassName);
