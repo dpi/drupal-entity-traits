@@ -26,7 +26,7 @@ jobs:
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v1"
+        uses: "ramsey/composer-install@v2"
       - name: "Run PHPStan"
         run: |
           ./vendor/bin/phpstan analyse --no-progress
@@ -49,7 +49,7 @@ jobs:
       - name: Setup problem matchers for PHPUnit
         run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v1"
+        uses: "ramsey/composer-install@v2"
         with:
           dependency-versions: ${{ matrix.dependency-versions }}
       - name: "Prepare for tests"
